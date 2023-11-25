@@ -1,0 +1,214 @@
+*{
+    /* ctrl+ }  "Coloca los comando para poder comentar"*/
+    /*Formatear valores a 0  */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+/* Aplicamos estilos al header */
+header{
+    background-color:#0a5c5a;
+}
+
+header > nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+header > Nav > a{
+    color:#f7a472 ;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    /* trabajamos con el menu para poder colocarles distintas propiedades */
+}header > Nav > a:hover{
+    color: #fa2a3a;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+/* aplicamos estilo al main */
+/* las imagenes estan distribuidas en lo ancho, se aplica en el main */
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+}
+
+.tarj{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Aplicar estilo a las Imágenes */
+.tarj > .tarjetas{
+    width: 300px;
+    height: 250;
+    padding: 15px;
+    border: 1px solid #0a5c5a;
+    border-radius: 20px;
+    margin-top: 20px;
+    transform: box-shadow  0.3s ease-in-out;
+   }
+
+
+.tarj > .tarjetas:hover{
+    box-shadow: 0 16px 32px  rgba(0, 0, 0, 0.3);
+}
+
+/* Aplicar estilo a la img respecto a las Imagenes */
+.tarj > .tarjetas > img{
+    width: 100%;
+   height: fit-content;
+   border-radius: 20px;
+}
+.container{
+    padding: 20px;
+}
+
+.img-propia{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+   
+}
+
+
+.noved{
+
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 200px);
+    gap: 10px;
+    grid-template-areas:
+    
+    
+    
+    "Area4 Area2 Area5 Area3"
+    "Area4 Area2 Area5 Area6"
+    "Area7 Area8 Area9 Area6"
+    "Area7 Area8 Area9 Area12"
+    "Area10 Area10 Area11 Area12"
+    
+   
+   
+}
+
+.Area{
+    border: 1px solid black;
+    border-radius: 10px;
+    
+     
+}
+
+#Area2{
+    background-color: #33ff57;
+    grid-area: Area2;
+  
+}
+
+
+#Area3{
+    background-color: #33b5ff;
+    grid-area: Area3;
+}
+#Area4{
+    background-color: #ffd633;
+    grid-area: Area4;
+   
+}
+#Area5{
+    background-color: #33ff96;
+    grid-area: Area5;
+}
+#Area6{
+    background-color: #f4cc70;
+    grid-area: Area6;
+}
+
+#Area7{
+    background-color: #8d230f;
+    grid-area: Area7;
+}
+
+#Area8{
+    background-color: #1995ad;
+    grid-area: Area8;
+}
+
+#Area9{
+    background-color: #ba5536;
+    grid-area: Area9;
+}
+#Area10{
+    background-color: #b7b8b6;
+    grid-area: Area10;
+}
+#Area11{
+    background-color: #d09683;
+    grid-area: Area11;
+}
+#Area12{
+    background-color: #ddbc95;
+    grid-area: Area12;
+}
+
+@media ( max-width: 768px ){
+    .inic-1{
+
+        border: 1px solid black;
+        background-color: #f8ffb8;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4, 75px);
+        gap: 10px;
+        grid-template-areas:
+        "Area2 Area3 Area4 "
+        "Area5 Area6 Area7 "
+        "Area8 Area9 Area10"
+        "Area11 Area12"
+        
+
+        ;
+}
+
+@media(max-width: 320px){
+
+    .inic-1{
+
+        border: 1px solid black;
+        background-color: #f8ffb8;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(10, 20px);
+        gap: 10px;
+        grid-template-areas:
+        "Area2 "
+        "Area3 "
+        "Area4 "
+        "Area5 "
+        "Area6 "
+        "Area7 "
+        "Area8 "
+        "Area9 "
+        "Area10 "
+        "Area11 "
+        "Area12"
+        ;
+}
